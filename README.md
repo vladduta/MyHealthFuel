@@ -33,10 +33,31 @@ Calcularea caloriilor arse în timpul unei activități fizice:
 
 Calorii arse = 3.5 × MET × greutatea (kg) × timp(minute) / 200
 
-"Capturarea și prelucrarea imaginilor" 	
+Capturarea și prelucrarea imaginilor
+
 Utilizarea camerei dispozitivului pentru capturarea frame-urilor.. 
 Utilizarea ML Kit pentru detectarea pozițiilor umărului, cotului și încheieturii.
 ![image](https://github.com/VladDuta/MyHealthFuel/assets/109473890/e4e3f474-ed25-4afc-829b-fb69450e187e)
+
+
+Calculul vectorilor și unghiului	
+
+Definirea vectorilor umăr-cot și cot-încheietură (prin calulare diferentelor de coordonate).
+
+dx1 =  x1- x2; dy1 =  y1- y2; 
+dx2 =  x3- x2; dy2 =  y3- y2
+Calcularea produsului scalar și a magnitudinilor vectorilor.
+
+"Produs scalar = (dx1 × dx2) + (dy1 × dy2)"
+"cos" ⁡("θ" )"="  "produs scalar" /"magnitudine1 × magnitudine2"  ; "magnitudine  = " √(〖"dx" 〗^"2"  " + " 〖"dy" 〗^"2"  " ​" )
+Determinarea unghiului dintre segmentele brațului.
+
+"θ = arccos(cos(θ))"
+"unghi= θ ×"  "180" /"π" 
+	
+Unghiul calculat reprezintă unghiul dintre segmentul umăr-cot și segmentul cot-încheietură
+Se numără o repetiție când unghiul la cot este < 50 de grade și starea anterioară a fost "jos".
+
 
 
 
