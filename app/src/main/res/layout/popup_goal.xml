@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/RadioGroupDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/ShapeAppearanceOverlay.Material3.Corner.Top"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/LoseWeight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_11sdp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Lose Weight"/>
+
+        <RadioButton
+            android:id="@+id/MaintainWeight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_11sdp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Maintain Weight" />
+
+
+        <RadioButton
+            android:id="@+id/GainWeight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_11sdp"
+
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Gain Weight"/>
+
+
+
+    </RadioGroup>
+
+
+</RelativeLayout>

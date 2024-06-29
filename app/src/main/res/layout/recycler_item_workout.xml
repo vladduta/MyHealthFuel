@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_110sdp"
+    android:layout_height="@dimen/_115sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/workoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/workoutDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="Monday"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/clockImage"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:srcCompat="@drawable/baseline_access_time_filled_24"
+            app:tint="@color/royalblue" />
+
+        <TextView
+            android:id="@+id/estimatedWorkoutDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/clockImage"
+            android:text="0 min"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/fireImage"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_52sdp"
+            app:srcCompat="@drawable/cutlery"
+            app:tint="@color/royalblue" />
+
+        <TextView
+            android:id="@+id/estimatedWorkoutCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/fireImage"
+            android:layout_marginTop="@dimen/_52sdp"
+            android:text="0 kcal"
+            android:textSize="@dimen/_15sdp"/>
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_72sdp"
+            android:clickable="true"
+            android:contentDescription="Log In"
+            app:backgroundTint="@color/white"
+            app:srcCompat="@drawable/baseline_delete_24"
+            app:tint="@color/red" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

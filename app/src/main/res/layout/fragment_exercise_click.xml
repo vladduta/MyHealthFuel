@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpage.ExerciseFragmentClick">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Log In"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textViewExerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="@dimen/_50sdp"
+        android:paddingEnd="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Duration:"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <TextView
+        android:id="@+id/textViewDuration1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:text=" minutes"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextDuration"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <EditText
+        android:id="@+id/editTextDuration"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:background="@drawable/edit_text_box2"
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/textViewDuration"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <TextView
+        android:id="@+id/textViewRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:text="Rest between sets:"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <TextView
+        android:id="@+id/textViewRest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_145sdp"
+        android:text="seconds"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextRest"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <EditText
+        android:id="@+id/editTextRest"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_135sdp"
+        android:background="@drawable/edit_text_box2"
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/textViewRest"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+
+    <TextView
+        android:id="@+id/textViewReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text="Reps:"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+
+    <EditText
+        android:id="@+id/editTextReps"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:background="@drawable/edit_text_box2"
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.060"
+        app:layout_constraintStart_toEndOf="@+id/textViewSets"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Weight:"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <TextView
+        android:id="@+id/textViewWeight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:text="kg"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextWeight"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:background="@drawable/edit_text_box2"
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/textViewSets"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+
+    <TextView
+        android:id="@+id/textViewSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="Sets:"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+    <EditText
+        android:id="@+id/editTextSets"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_95sdp"
+        android:background="@drawable/edit_text_box2"
+        android:ems="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toEndOf="@+id/textViewSets"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/sit_ups_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWorkouts" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerWorkouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        />
+
+    <Button
+        android:id="@+id/addExerciseButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/royalblue"
+        android:text="Add Exercise"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/automatedCountingButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple"
+        android:text="Automated counting"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/addExerciseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

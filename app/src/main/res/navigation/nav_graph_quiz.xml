@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/quiz1Fragment">
+
+    <fragment
+        android:id="@+id/quiz1Fragment"
+        android:name="com.healthfuel.myhealthfuel.authentication.quiz.Quiz1Fragment"
+        android:label="fragment_quiz1"
+        tools:layout="@layout/fragment_quiz1" >
+        <action
+            android:id="@+id/navigateToQuiz2"
+            app:destination="@id/quiz2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz2Fragment"
+        android:name="com.healthfuel.myhealthfuel.authentication.quiz.Quiz2Fragment"
+        android:label="fragment_quiz2"
+        tools:layout="@layout/fragment_quiz2" >
+        <action
+            android:id="@+id/action_quiz2Fragment_to_quiz3Fragment"
+            app:destination="@id/quiz3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz3Fragment"
+        android:name="com.healthfuel.myhealthfuel.authentication.quiz.Quiz3Fragment"
+        android:label="fragment_quiz3"
+        tools:layout="@layout/fragment_quiz3" >
+        <action
+            android:id="@+id/action_quiz3Fragment_to_quiz4Fragment"
+            app:destination="@id/quiz4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz4Fragment"
+        android:name="com.healthfuel.myhealthfuel.authentication.quiz.Quiz4Fragment"
+        android:label="fragment_quiz4"
+        tools:layout="@layout/fragment_quiz4" />
+</navigation>

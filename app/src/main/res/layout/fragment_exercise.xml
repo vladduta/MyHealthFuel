@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainpage.ExerciseFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start|center_vertical"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="Log In"
+                app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+                app:tint="@color/white"
+                android:layout_marginStart="@dimen/_7sdp"/>
+
+            <TextView
+                android:id="@+id/textViewMealTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add exercise"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />
+
+    <LinearLayout
+        android:id="@+id/categoryList1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/AllButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/AbsButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Abs"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/ArmsButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Arms"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/ShouldersButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Shoulders"
+            android:textSize="@dimen/_8sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/categoryList2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ChestButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Chest"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/CardioButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cardio"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/LegsButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Legs"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="@dimen/_8sdp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exerciseRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="show_Dialog"
+        tools:listitem="@layout/recycler_item_exercise" />
+
+</LinearLayout>

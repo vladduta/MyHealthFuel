@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/RadioGroupDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/ShapeAppearanceOverlay.Material3.Corner.Top"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/Sedentary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Sedentary"/>
+
+        <RadioButton
+            android:id="@+id/LowActive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Low Active" />
+
+        <RadioButton
+            android:id="@+id/Active"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Active" />
+
+        <RadioButton
+            android:id="@+id/VeryActive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_10sdp"
+
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="VeryActive"/>
+
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewSedentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroupDays"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Sedentary - you make less than 5000 steps"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLowActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSedentary"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Low Active - you make between 5000 and 7000 steps"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:textSize="@dimen/_10sdp"
+         />
+
+    <TextView
+        android:id="@+id/textViewActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLowActive"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Active - you make between 7000 and 9000 steps"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:textSize="@dimen/_10sdp"
+         />
+
+    <TextView
+        android:id="@+id/textViewVeryActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewActive"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Very Active - you make more than 9000 steps"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_10sdp"
+        />
+
+
+</RelativeLayout>

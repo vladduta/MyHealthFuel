@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mainpage.MealFragment">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Log In"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textViewMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        android:textColor="@color/white"/>
+
+
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="Back"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:srcCompat="@drawable/baseline_add_circle_24"
+        app:tint="@color/white" />
+
+
+    <ImageView
+        android:id="@+id/kcalImage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/_21sdp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/baseline_circle_24"
+        app:tint="@color/royalblue" />
+
+    <TextView
+        android:id="@+id/estimatedMealCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="0 kcal"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/kcalImage"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/ProtImage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_21sdp"
+
+        app:layout_constraintStart_toEndOf="@+id/estimatedMealCalories"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/baseline_circle_24"
+        app:tint="@color/salmon" />
+
+    <TextView
+        android:id="@+id/estimatedMealProteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        android:text="0 Proteins"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/ProtImage"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/CarbImage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_21sdp"
+
+        app:layout_constraintStart_toEndOf="@+id/estimatedMealProteins"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/baseline_circle_24"
+        app:tint="@color/green" />
+
+    <TextView
+        android:id="@+id/estimatedMealCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        android:text="0 Carbs"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/CarbImage"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/FatImage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_21sdp"
+        app:layout_constraintStart_toEndOf="@+id/estimatedMealCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/baseline_circle_24"
+        app:tint="@color/yellow" />
+
+    <TextView
+        android:id="@+id/estimatedMealFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="0 Fats"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/FatImage"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/kcalImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/recycler_item_food"
+        android:onClick="show_Dialog"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

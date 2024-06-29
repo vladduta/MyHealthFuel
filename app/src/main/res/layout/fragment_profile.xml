@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpage.ProfileFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="Log In"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textViewMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My profile"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageAccount"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        app:tint="@color/royalblue"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/userAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Account"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="@id/imageAccount"
+        app:layout_constraintStart_toStartOf="@id/imageAccount"
+        app:layout_constraintTop_toBottomOf="@+id/imageAccount"  />
+
+
+
+    <TextView
+        android:id="@+id/EmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonEmail"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/userAccountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/AgeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonAge"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/GenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonGender"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/HeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonHeight"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+
+    <TextView
+        android:id="@+id/WeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonWeight"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+
+    <TextView
+        android:id="@+id/ActivityLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Level : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonActivityLevel"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonActivityLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_110sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+
+    <TextView
+        android:id="@+id/GoalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal : "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@+id/buttonGoal"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasdas"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttonActivityLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/red"
+        android:text="  Log out"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoal" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day of this workout"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:paddingStart="10dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/workoutEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/RadioGroupDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/ShapeAppearanceOverlay.Material3.Corner.Top"
+        android:layout_marginTop="190dp">
+
+        <RadioButton
+            android:id="@+id/Sun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Sun"/>
+
+        <RadioButton
+            android:id="@+id/Mon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Mon" />
+
+        <RadioButton
+            android:id="@+id/Tue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Tue" />
+
+        <RadioButton
+            android:id="@+id/Wed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Wed"/>
+
+        <RadioButton
+            android:id="@+id/Thu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Thu" />
+
+        <RadioButton
+            android:id="@+id/Fri"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Fri"/>
+
+        <RadioButton
+            android:id="@+id/Sat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+            android:gravity="center_horizontal|bottom"
+            android:text="Sat" />
+
+    </RadioGroup>
+
+</RelativeLayout>

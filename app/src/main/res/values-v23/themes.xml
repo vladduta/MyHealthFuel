@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MyHealthFuel" parent="Base.Theme.MyHealthFuel">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@color/royalblue</item>
+        <item name="android:statusBarColor">@color/royalblue</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+</resources>
