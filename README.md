@@ -53,8 +53,6 @@ Produs scalar = (dx1 × dx2) + (dy1 × dy2)
 
 cos(θ) = (produsul scalar) / (magnitudine1 × magnitudine2), unde: magnitudine = √(dx^2 + dy^2)
 
-Determinarea unghiului dintre segmentele brațului.
-
 θ = arccos(cos(θ))
 
 unghi= θ × 180 / π 
