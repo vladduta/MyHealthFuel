@@ -46,15 +46,18 @@ Definirea vectorilor umăr-cot și cot-încheietură (prin calulare diferentelor
 
 dx1 =  x1- x2; dy1 =  y1- y2; 
 dx2 =  x3- x2; dy2 =  y3- y2
+
 Calcularea produsului scalar și a magnitudinilor vectorilor.
 
 Produs scalar = (dx1 × dx2) + (dy1 × dy2)
+
 cos(θ) = (produsul scalar) / (magnitudine1 × magnitudine2), unde: magnitudine = √(dx^2 + dy^2)
 
 Determinarea unghiului dintre segmentele brațului.
 
-"θ = arccos(cos(θ))"
-"unghi= θ ×"  "180" /"π" 
+θ = arccos(cos(θ))
+
+unghi= θ × 180 / π 
 	
 Unghiul calculat reprezintă unghiul dintre segmentul umăr-cot și segmentul cot-încheietură
 Se numără o repetiție când unghiul la cot este < 50 de grade și starea anterioară a fost "jos".
