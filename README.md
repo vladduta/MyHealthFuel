@@ -35,8 +35,9 @@ Calorii arse = 3.5 × MET × greutatea (kg) × timp(minute) / 200
 
 Capturarea și prelucrarea imaginilor
 
-Utilizarea camerei dispozitivului pentru capturarea frame-urilor.. 
+Utilizarea camerei dispozitivului pentru capturarea frame-urilor.
 Utilizarea ML Kit pentru detectarea pozițiilor umărului, cotului și încheieturii.
+
 ![image](https://github.com/VladDuta/MyHealthFuel/assets/109473890/e4e3f474-ed25-4afc-829b-fb69450e187e)
 
 
