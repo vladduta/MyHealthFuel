@@ -15,9 +15,19 @@ prevenirea accidentărilor.
 Calcularea necesarului caloric (Ecuația Mifflin-St. Jeor) 		
 pentru bărbați: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) + 5. 
 pentru femei: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) - 161. 
+Scădere în greutate: TDEE = 0.8 x BMR
+Menținere: TDEE = BMR
+Creșterea în greutate: TDEE = 1.2 x BMR
 
-Calcularea Macronutrienților:		
+Calcularea macronutrienților:		
 Proteine: 0.8 g/kg pentru sedentari, 1.2 g/kg pentru activi.
-Grăsimi: 25% din total caloric.
-Carbohidrați: Calorii rămase = BMR - (calorii proteine + calorii grăsimi).
+Grăsimi: 25% din total caloric (TDEE).
+Carbohidrați: Calorii rămase = TDEE - (calorii proteine + calorii grăsimi).
+
+Calcularea caloriilor arse în timpul unei activități fizice:		
+Calorii arse = 3.5 × MET × greutatea (kg) × timp(minute) / 200
+
+
+
+
 
