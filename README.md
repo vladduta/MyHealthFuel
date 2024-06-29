@@ -12,20 +12,33 @@ procesul de numărarea al repetărilor folosind camera dispozitivului mobil. Ace
 înregistrare precisă a fiecărei mișcări și a corectitudinii executării acestora, contribuind astfel la
 prevenirea accidentărilor.
 
-Calcularea necesarului caloric (Ecuația Mifflin-St. Jeor) 		
+
+Calcularea necesarului caloric (Ecuația Mifflin-St. Jeor) 
+
 pentru bărbați: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) + 5. 
 pentru femei: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) - 161. 
 Scădere în greutate: TDEE = 0.8 x BMR
 Menținere: TDEE = BMR
 Creșterea în greutate: TDEE = 1.2 x BMR
 
+
 Calcularea macronutrienților:		
+
 Proteine: 0.8 g/kg pentru sedentari, 1.2 g/kg pentru activi.
 Grăsimi: 25% din total caloric (TDEE).
 Carbohidrați: Calorii rămase = TDEE - (calorii proteine + calorii grăsimi).
 
+
 Calcularea caloriilor arse în timpul unei activități fizice:		
+
 Calorii arse = 3.5 × MET × greutatea (kg) × timp(minute) / 200
+
+"Capturarea și prelucrarea imaginilor" 	
+Utilizarea camerei dispozitivului pentru capturarea frame-urilor.. 
+Utilizarea ML Kit pentru detectarea pozițiilor umărului, cotului și încheieturii.
+![image](https://github.com/VladDuta/MyHealthFuel/assets/109473890/e4e3f474-ed25-4afc-829b-fb69450e187e)
+
+
 
 
 
