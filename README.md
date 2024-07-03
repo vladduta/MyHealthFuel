@@ -49,7 +49,7 @@ This project is a mobile application developed to assist users in maintaining an
 
 - θ = arccos(cos(θ))
 - angle = θ × 180 / π
-- 
+  
 The calculated angle represents the angle between the shoulder-elbow segment and the elbow-wrist segment
 
 A repetition is counted when the elbow angle is less than 50 degrees and the previous state was "down.
