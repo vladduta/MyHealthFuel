@@ -1,4 +1,5 @@
-![banner](https://github.com/vladduta/MyHealthFuel/assets/109473890/dc8dbecd-54f9-43d3-96f6-8b2e5aa39c40)
+![banner](https://github.com/vladduta/MyHealthFuel/assets/109473890/b730dfae-1c72-41b1-a32c-4ba61e3427f4)
+
 
 
 
