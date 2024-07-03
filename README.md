@@ -1,71 +1,59 @@
 ![banner](https://github.com/vladduta/MyHealthFuel/assets/109473890/b730dfae-1c72-41b1-a32c-4ba61e3427f4)
 
+## Overview
+This project is a mobile application developed to assist users in maintaining and improving their fitness and nutritional habits. It provides tools to track physical activity and manage nutritional intake
 
+## Features
+- **Activity Monitoring**: Track your daily physical activities including step counting by using the built-in sensor of the mobile device
+- **Nutritional Tracking**: Log your meals and monitor your calorie and macronutrient intake
+- **Exercise Automation**: Automated counting of exercise repetitions to help precise recording of each movement 
+- **Personalized Plans**: Create and manage custom fitness and nutrition plans tailored to your goals
+- **Notifications**: Receive reminders and updates to keep you on track with your meals and your fitness goals
 
+## Technologies Used
+- **Android Studio**: For developing the Android application.
+- **Firebase**: Backend services including authentication, notifications and database management
+- **ML Kit**: Used for the pose detection, pre-trained model
+- **ZXing Library**: For barcode scanning to log nutritional information from scanned food items
+- **Open Food Facts API**: To fetch detailed nutritional information of a variaty foods from the entire world
 
-Aplicația permite utilizatorilor să își creeze un profil personalizat pe baza unor parametri
-precum vârsta, greutatea, înălțimea și nivelul de activitate fizică, pentru a calcula necesarul caloric
-zilnic și distribuția optimă a macronutrienților. Prin scanarea codurilor de bare, utilizatorii pot
-adăuga alimente în jurnalul alimentar, simplificând astfel procesul de înregistrare a alimentației.
-Utilizatorii pot vizualiza valorile nutritive ale alimentelor adăugate în jurnalul alimentar, beneficiind
-astfel de o perspectivă clară asupra aportului lor nutritiv zilnic.
-De asemenea, utilizatorii pot alege dintr-o gamă variată de exerciții organizate pe
-principalele grupe musculare, fiecare exercițiu având atașată o animație care ilustrează modul
-corect de execuție. Mai mult decât atât, majoritatea aplicațiilor de fitness se limitează la ghidaje
-video sau la înregistrarea manuală a progresului. În schimb, această aplicație automatizează
-procesul de numărarea al repetărilor folosind camera dispozitivului mobil. Acest lucru asigură o
-înregistrare precisă a fiecărei mișcări și a corectitudinii executării acestora, contribuind astfel la
-prevenirea accidentărilor.
+## Caloric requirement calculation (Mifflin-St. Jeor equation):
 
+- **for men**: BMR = 10 × weight (kg) + 6.25 × height (cm) - 5 × age (years) + 5
+- **for women**: BMR = 10 × weight (kg) + 6.25 × height (cm) - 5 × age (years) - 161
+- **Weight loss**: TDEE = 0.8 x BMR
+- **Maintenance**: TDEE = BMR
+- **Weight gain**: TDEE = 1.2 x BMR
 
-Calcularea necesarului caloric (Ecuația Mifflin-St. Jeor) :
+## Macronutrients Calculation:
+- **Protein**: 0.8 g/kg for sedentary individuals; 1.2 g/kg for active individuals
+- **Fats**: 25% of total caloric intake (TDEE)
+- **Carbohydrates**: Remaining calories = TDEE - (protein calories + fat calories)
 
-pentru bărbați: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) + 5. 
-pentru femei: BMR = 10 × greutatea (kg) + 6.25 × înălțimea (cm) - 5 × vârsta (ani) - 161. 
-Scădere în greutate: TDEE = 0.8 x BMR
-Menținere: TDEE = BMR
-Creșterea în greutate: TDEE = 1.2 x BMR
+## Calorie Burn Calculation During Physical Activity:
+- **Calories burned** = 3.5 × MET × weight (kg) × time (minutes) / 200
 
-
-Calcularea macronutrienților:		
-
-Proteine: 0.8 g/kg pentru sedentari, 1.2 g/kg pentru activi.
-Grăsimi: 25% din total caloric (TDEE).
-Carbohidrați: Calorii rămase = TDEE - (calorii proteine + calorii grăsimi).
-
-
-Calcularea caloriilor arse în timpul unei activități fizice:		
-
-Calorii arse = 3.5 × MET × greutatea (kg) × timp(minute) / 200
-
-Capturarea și prelucrarea imaginilor:
-
-Utilizarea camerei dispozitivului pentru capturarea frame-urilor.
-Utilizarea ML Kit pentru detectarea pozițiilor umărului, cotului și încheieturii.
+## Image Capture and Processing:
+- **Capture frames**: Using the device camera to capture the frames
+- **Detect positions**: Using ML Kit to detect shoulder, elbow, and wrist positions
 
 ![image](https://github.com/VladDuta/MyHealthFuel/assets/109473890/e4e3f474-ed25-4afc-829b-fb69450e187e)
 
+## Calculation of the angle between the 3 landmarks:
+- **Define vectors**: Define shoulder-elbow and elbow-wrist vectors by calculating the coordinate differences
+- dx1 = x1 - x2; dy1 = y1 - y2
+- dx2 = x3 - x2; dy2 = y3 - y2
+  
+- dot product = (dx1 × dx2) + (dy1 × dy2)
+- cos(θ) = (dot product) / (magnitude1 × magnitude2), where:magnitude = √(dx^2 + dy^2)
 
-Calculul vectorilor și unghiului:	
+- θ = arccos(cos(θ))
+- angle = θ × 180 / π
+- 
+The calculated angle represents the angle between the shoulder-elbow segment and the elbow-wrist segment
 
-Definirea vectorilor umăr-cot și cot-încheietură (prin calulare diferentelor de coordonate).
-
-dx1 =  x1- x2; dy1 =  y1- y2; 
-dx2 =  x3- x2; dy2 =  y3- y2
-
-Calcularea produsului scalar și a magnitudinilor vectorilor.
-
-Produs scalar = (dx1 × dx2) + (dy1 × dy2)
-
-cos(θ) = (produsul scalar) / (magnitudine1 × magnitudine2), unde: magnitudine = √(dx^2 + dy^2)
-
-θ = arccos(cos(θ))
-
-unghi= θ × 180 / π 
+A repetition is counted when the elbow angle is less than 50 degrees and the previous state was "down.
 	
-Unghiul calculat reprezintă unghiul dintre segmentul umăr-cot și segmentul cot-încheietură
-Se numără o repetiție când unghiul la cot este < 50 de grade și starea anterioară a fost "jos".
-
 
 
 
