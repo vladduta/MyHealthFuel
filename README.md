@@ -1,3 +1,7 @@
+![banner](https://github.com/vladduta/MyHealthFuel/assets/109473890/dc8dbecd-54f9-43d3-96f6-8b2e5aa39c40)
+
+
+
 Aplicația permite utilizatorilor să își creeze un profil personalizat pe baza unor parametri
 precum vârsta, greutatea, înălțimea și nivelul de activitate fizică, pentru a calcula necesarul caloric
 zilnic și distribuția optimă a macronutrienților. Prin scanarea codurilor de bare, utilizatorii pot
