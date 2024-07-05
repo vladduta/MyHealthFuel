@@ -76,8 +76,7 @@ A repetition is counted when the elbow angle is less than 50 degrees and the pre
 
 | FoodFragmentClick | ExerciseFragmentClick |
 |---|---|
-|![FoodFragmentClick](https://github.com/vladduta/MyHealthFuel/assets/109473890/8b037909-5b87-47a1-8a0f-c71464c716be) |![ExerciseFragmentClick](https://github.com/vladduta/MyHealthFuel/assets/109473890/05a9fabd-ea0f-4764-8135-436b06024b9e) |
-
+| <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/8b037909-5b87-47a1-8a0f-c71464c716be" alt="FoodFragmentClick" width="200"/> | <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/05a9fabd-ea0f-4764-8135-436b06024b9e" alt="ExerciseFragmentClick" width="200"/> |
 
 
 
