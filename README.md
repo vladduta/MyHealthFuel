@@ -10,7 +10,7 @@ This project is a mobile application developed to assist users in maintaining an
 - **Personalized Plans**: Create and manage custom fitness and nutrition plans tailored to your goals
 - **Notifications**: Receive reminders and updates to keep you on track with your meals and your fitness goals
 
-## Technologies Used
+## Technologies used
 - **Android Studio**: For developing the Android application.
 - **Firebase**: Backend services including authentication, notifications and database management
 - **ML Kit**: Used for the pose detection, pre-trained model
@@ -25,15 +25,15 @@ This project is a mobile application developed to assist users in maintaining an
 - **Maintenance**: TDEE = BMR
 - **Weight gain**: TDEE = 1.2 x BMR
 
-## Macronutrients Calculation:
+## Macronutrients calculation:
 - **Protein**: 0.8 g/kg for sedentary individuals; 1.2 g/kg for active individuals
 - **Fats**: 25% of total caloric intake (TDEE)
 - **Carbohydrates**: Remaining calories = TDEE - (protein calories + fat calories)
 
-## Calorie Burn Calculation During Physical Activity:
+## Calorie burn calculation during physical activity:
 - **Calories burned** = 3.5 × MET × weight (kg) × time (minutes) / 200
 
-## Image Processing:
+## Image processing:
 - **Capture frames**: Using the device camera to capture the frames
 - **Detect positions**: Using ML Kit to detect shoulder, elbow, and wrist positions
 
