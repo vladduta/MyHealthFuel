@@ -39,7 +39,7 @@ This project is a mobile application developed to assist users in maintaining an
 
 ![image](https://github.com/VladDuta/MyHealthFuel/assets/109473890/e4e3f474-ed25-4afc-829b-fb69450e187e)
 
-## Calculation of the angle between the 3 landmarks:
+## Calculation of the angle between the 3 landmarks (shoulder, elbow, wrist):
 - **Define vectors**: Define shoulder-elbow and elbow-wrist vectors by calculating the coordinate differences
 - dx1 = x1 - x2; dy1 = y1 - y2
 - dx2 = x3 - x2; dy2 = y3 - y2
