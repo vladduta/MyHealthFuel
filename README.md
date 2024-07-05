@@ -57,13 +57,16 @@ A repetition is counted when the elbow angle is less than 50 degrees and the pre
 
 ## Screenshots
 
-| ![Navigation-graph-quiz](https://github.com/vladduta/MyHealthFuel/assets/109473890/51c0ed31-7a58-4a4c-87df-dbf296231f1a) | ![HomeFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/0ae1aba7-b650-415d-a8c3-504bfb2f2e22) |
-|---|---|
-| Navigation Graph Quiz | Home Fragment |
+**Navigation Graph Quiz**
 
-| ![MealFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/6e12a594-d05b-49f8-a28c-531736888215) | ![WorkoutFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/d35a36fb-9eae-4cf8-8bba-e35b9cd4892d) |
-|---|---|
-| Meal Fragment | Workout Fragment |
+![Navigation-graph-quiz](https://github.com/vladduta/MyHealthFuel/assets/109473890/51c0ed31-7a58-4a4c-87df-dbf296231f1a)
+
+**Fragments**
+
+| Home Fragment | Meal Fragment | Workout Fragment |
+|---|---|---|
+| ![HomeFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/0ae1aba7-b650-415d-a8c3-504bfb2f2e22) | ![MealFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/6e12a594-d05b-49f8-a28c-531736888215) | ![WorkoutFragment](https://github.com/vladduta/MyHealthFuel/assets/109473890/d35a36fb-9eae-4cf8-8bba-e35b9cd4892d) |
+
 
 
 
