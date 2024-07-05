@@ -70,9 +70,9 @@ A repetition is counted when the elbow angle is less than 50 degrees and the pre
 
 | FoodFragmentClick | ExerciseFragmentClick |
 |---|---|
-| <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/8b037909-5b87-47a1-8a0f-c71464c716be" alt="FoodFragmentClick" width="350"/> | <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/05a9fabd-ea0f-4764-8135-436b06024b9e" alt="ExerciseFragmentClick" width="350"/> |
+| <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/8b037909-5b87-47a1-8a0f-c71464c716be" alt="FoodFragmentClick" width="300"/> | <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/05a9fabd-ea0f-4764-8135-436b06024b9e" alt="ExerciseFragmentClick" width="300"/> |
 
 
 | FoodFragment | ExerciseFragment |
 |---|---|
-| <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/fba13d67-3fb7-4e0f-b598-3fa18e474492" alt="FoodFragment" width="350"/> | <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/5f6f457a-6b03-4584-88c5-ff647ec0670b" alt="ExerciseFragment" width="350"/> |
+| <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/fba13d67-3fb7-4e0f-b598-3fa18e474492" alt="FoodFragment" width="300"/> | <img src="https://github.com/vladduta/MyHealthFuel/assets/109473890/5f6f457a-6b03-4584-88c5-ff647ec0670b" alt="ExerciseFragment" width="300"/> |
