@@ -33,7 +33,7 @@ This project is a mobile application developed to assist users in maintaining an
 ## Calorie Burn Calculation During Physical Activity:
 - **Calories burned** = 3.5 × MET × weight (kg) × time (minutes) / 200
 
-## Image Capture and Processing:
+## Image Processing:
 - **Capture frames**: Using the device camera to capture the frames
 - **Detect positions**: Using ML Kit to detect shoulder, elbow, and wrist positions
 
